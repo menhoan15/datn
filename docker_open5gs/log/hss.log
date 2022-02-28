@@ -1,0 +1,24 @@
+Open5GS daemon v2.4.4-10-g757285b
+
+02/20 20:41:46.365: [app] INFO: Configuration: '/open5gs/install/etc/open5gs/hss.yaml' (../lib/app/ogs-init.c:129)
+02/20 20:41:46.365: [app] INFO: File Logging: '/open5gs/install/var/log/open5gs/hss.log' (../lib/app/ogs-init.c:132)
+02/20 20:41:46.368: [dbi] INFO: MongoDB URI: 'mongodb://172.22.0.2/open5gs' (../lib/dbi/ogs-mongoc.c:130)
+02/20 20:41:46.455: [app] INFO: HSS initialize...done (../src/hss/app-init.c:31)
+Open5GS daemon v2.4.4-10-g757285b
+
+02/25 23:40:02.387: [app] INFO: Configuration: '/open5gs/install/etc/open5gs/hss.yaml' (../lib/app/ogs-init.c:129)
+02/25 23:40:02.387: [app] INFO: File Logging: '/open5gs/install/var/log/open5gs/hss.log' (../lib/app/ogs-init.c:132)
+02/25 23:40:02.392: [dbi] INFO: MongoDB URI: 'mongodb://172.22.0.2/open5gs' (../lib/dbi/ogs-mongoc.c:130)
+02/25 23:40:02.435: [app] INFO: HSS initialize...done (../src/hss/app-init.c:31)
+Open5GS daemon v2.4.4-10-g757285b
+
+02/26 17:00:51.558: [app] INFO: Configuration: '/open5gs/install/etc/open5gs/hss.yaml' (../lib/app/ogs-init.c:129)
+02/26 17:00:51.558: [app] INFO: File Logging: '/open5gs/install/var/log/open5gs/hss.log' (../lib/app/ogs-init.c:132)
+02/26 17:00:51.560: [dbi] INFO: MongoDB URI: 'mongodb://172.22.0.2/open5gs' (../lib/dbi/ogs-mongoc.c:130)
+02/26 17:00:51.618: [app] INFO: HSS initialize...done (../src/hss/app-init.c:31)
+Open5GS daemon v2.4.4-10-g757285b
+
+02/26 17:09:20.714: [app] INFO: Configuration: '/open5gs/install/etc/open5gs/hss.yaml' (../lib/app/ogs-init.c:129)
+02/26 17:09:20.714: [app] INFO: File Logging: '/open5gs/install/var/log/open5gs/hss.log' (../lib/app/ogs-init.c:132)
+02/26 17:09:20.717: [dbi] INFO: MongoDB URI: 'mongodb://172.22.0.2/open5gs' (../lib/dbi/ogs-mongoc.c:130)
+02/26 17:09:20.834: [app] INFO: HSS initialize...done (../src/hss/app-init.c:31)

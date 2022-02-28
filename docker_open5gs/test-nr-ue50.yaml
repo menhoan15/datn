@@ -1,0 +1,1106 @@
+version: '3'
+services:
+  nr_ue1:
+    image: docker_ueransim
+    restart: on-failure
+    container_name: nr_ue1
+    stdin_open: true
+    tty: true
+    volumes:
+      - ./ueransim:/mnt/ueransim
+      - /etc/timezone:/etc/timezone:ro
+      - /etc/localtime:/etc/localtime:ro
+    env_file:
+      - .env
+    environment:
+      - COMPONENT_NAME=ueransim-ue-1
+    expose:
+      - "4997/udp"
+    cap_add:
+      - NET_ADMIN
+    privileged: true
+    networks:
+      default:
+        ipv4_address: ${NR_UE_IP1}
+  nr_ue2:
+    image: docker_ueransim
+    restart: on-failure
+    container_name: nr_ue2
+    stdin_open: true
+    tty: true
+    volumes:
+      - ./ueransim:/mnt/ueransim
+      - /etc/timezone:/etc/timezone:ro
+      - /etc/localtime:/etc/localtime:ro
+    env_file:
+      - .env
+    environment:
+      - COMPONENT_NAME=ueransim-ue-2
+    expose:
+      - "4997/udp"
+    cap_add:
+      - NET_ADMIN
+    privileged: true
+    networks:
+      default:
+        ipv4_address: ${NR_UE_IP2}
+  nr_ue3:
+    image: docker_ueransim
+    restart: on-failure
+    container_name: nr_ue3
+    stdin_open: true
+    tty: true
+    volumes:
+      - ./ueransim:/mnt/ueransim
+      - /etc/timezone:/etc/timezone:ro
+      - /etc/localtime:/etc/localtime:ro
+    env_file:
+      - .env
+    environment:
+      - COMPONENT_NAME=ueransim-ue-3
+    expose:
+      - "4997/udp"
+    cap_add:
+      - NET_ADMIN
+    privileged: true
+    networks:
+      default:
+        ipv4_address: ${NR_UE_IP3}
+  nr_ue4:
+    image: docker_ueransim
+    restart: on-failure
+    container_name: nr_ue4
+    stdin_open: true
+    tty: true
+    volumes:
+      - ./ueransim:/mnt/ueransim
+      - /etc/timezone:/etc/timezone:ro
+      - /etc/localtime:/etc/localtime:ro
+    env_file:
+      - .env
+    environment:
+      - COMPONENT_NAME=ueransim-ue-4
+    expose:
+      - "4997/udp"
+    cap_add:
+      - NET_ADMIN
+    privileged: true
+    networks:
+      default:
+        ipv4_address: ${NR_UE_IP4}
+  nr_ue5:
+    image: docker_ueransim
+    restart: on-failure
+    container_name: nr_ue5
+    stdin_open: true
+    tty: true
+    volumes:
+      - ./ueransim:/mnt/ueransim
+      - /etc/timezone:/etc/timezone:ro
+      - /etc/localtime:/etc/localtime:ro
+    env_file:
+      - .env
+    environment:
+      - COMPONENT_NAME=ueransim-ue-5
+    expose:
+      - "4997/udp"
+    cap_add:
+      - NET_ADMIN
+    privileged: true
+    networks:
+      default:
+        ipv4_address: ${NR_UE_IP5}
+  nr_ue6:
+    image: docker_ueransim
+    restart: on-failure
+    container_name: nr_ue6
+    stdin_open: true
+    tty: true
+    volumes:
+      - ./ueransim:/mnt/ueransim
+      - /etc/timezone:/etc/timezone:ro
+      - /etc/localtime:/etc/localtime:ro
+    env_file:
+      - .env
+    environment:
+      - COMPONENT_NAME=ueransim-ue-6
+    expose:
+      - "4997/udp"
+    cap_add:
+      - NET_ADMIN
+    privileged: true
+    networks:
+      default:
+        ipv4_address: ${NR_UE_IP6}
+  nr_ue7:
+    image: docker_ueransim
+    restart: on-failure
+    container_name: nr_ue7
+    stdin_open: true
+    tty: true
+    volumes:
+      - ./ueransim:/mnt/ueransim
+      - /etc/timezone:/etc/timezone:ro
+      - /etc/localtime:/etc/localtime:ro
+    env_file:
+      - .env
+    environment:
+      - COMPONENT_NAME=ueransim-ue-7
+    expose:
+      - "4997/udp"
+    cap_add:
+      - NET_ADMIN
+    privileged: true
+    networks:
+      default:
+        ipv4_address: ${NR_UE_IP7}
+  nr_ue8:
+    image: docker_ueransim
+    restart: on-failure
+    container_name: nr_ue8
+    stdin_open: true
+    tty: true
+    volumes:
+      - ./ueransim:/mnt/ueransim
+      - /etc/timezone:/etc/timezone:ro
+      - /etc/localtime:/etc/localtime:ro
+    env_file:
+      - .env
+    environment:
+      - COMPONENT_NAME=ueransim-ue-8
+    expose:
+      - "4997/udp"
+    cap_add:
+      - NET_ADMIN
+    privileged: true
+    networks:
+      default:
+        ipv4_address: ${NR_UE_IP8}
+  nr_ue9:
+    image: docker_ueransim
+    restart: on-failure
+    container_name: nr_ue9
+    stdin_open: true
+    tty: true
+    volumes:
+      - ./ueransim:/mnt/ueransim
+      - /etc/timezone:/etc/timezone:ro
+      - /etc/localtime:/etc/localtime:ro
+    env_file:
+      - .env
+    environment:
+      - COMPONENT_NAME=ueransim-ue-9
+    expose:
+      - "4997/udp"
+    cap_add:
+      - NET_ADMIN
+    privileged: true
+    networks:
+      default:
+        ipv4_address: ${NR_UE_IP9}
+  nr_ue10:
+    image: docker_ueransim
+    restart: on-failure
+    container_name: nr_ue10
+    stdin_open: true
+    tty: true
+    volumes:
+      - ./ueransim:/mnt/ueransim
+      - /etc/timezone:/etc/timezone:ro
+      - /etc/localtime:/etc/localtime:ro
+    env_file:
+      - .env
+    environment:
+      - COMPONENT_NAME=ueransim-ue-10
+    expose:
+      - "4997/udp"
+    cap_add:
+      - NET_ADMIN
+    privileged: true
+    networks:
+      default:
+        ipv4_address: ${NR_UE_IP10}
+  nr_ue11:
+    image: docker_ueransim
+    restart: on-failure
+    container_name: nr_ue11
+    stdin_open: true
+    tty: true
+    volumes:
+      - ./ueransim:/mnt/ueransim
+      - /etc/timezone:/etc/timezone:ro
+      - /etc/localtime:/etc/localtime:ro
+    env_file:
+      - .env
+    environment:
+      - COMPONENT_NAME=ueransim-ue-11
+    expose:
+      - "4997/udp"
+    cap_add:
+      - NET_ADMIN
+    privileged: true
+    networks:
+      default:
+        ipv4_address: ${NR_UE_IP11}
+  nr_ue12:
+    image: docker_ueransim
+    restart: on-failure
+    container_name: nr_ue12
+    stdin_open: true
+    tty: true
+    volumes:
+      - ./ueransim:/mnt/ueransim
+      - /etc/timezone:/etc/timezone:ro
+      - /etc/localtime:/etc/localtime:ro
+    env_file:
+      - .env
+    environment:
+      - COMPONENT_NAME=ueransim-ue-12
+    expose:
+      - "4997/udp"
+    cap_add:
+      - NET_ADMIN
+    privileged: true
+    networks:
+      default:
+        ipv4_address: ${NR_UE_IP12}
+  nr_ue13:
+    image: docker_ueransim
+    restart: on-failure
+    container_name: nr_ue13
+    stdin_open: true
+    tty: true
+    volumes:
+      - ./ueransim:/mnt/ueransim
+      - /etc/timezone:/etc/timezone:ro
+      - /etc/localtime:/etc/localtime:ro
+    env_file:
+      - .env
+    environment:
+      - COMPONENT_NAME=ueransim-ue-13
+    expose:
+      - "4997/udp"
+    cap_add:
+      - NET_ADMIN
+    privileged: true
+    networks:
+      default:
+        ipv4_address: ${NR_UE_IP13}
+  nr_ue14:
+    image: docker_ueransim
+    restart: on-failure
+    container_name: nr_ue14
+    stdin_open: true
+    tty: true
+    volumes:
+      - ./ueransim:/mnt/ueransim
+      - /etc/timezone:/etc/timezone:ro
+      - /etc/localtime:/etc/localtime:ro
+    env_file:
+      - .env
+    environment:
+      - COMPONENT_NAME=ueransim-ue-14
+    expose:
+      - "4997/udp"
+    cap_add:
+      - NET_ADMIN
+    privileged: true
+    networks:
+      default:
+        ipv4_address: ${NR_UE_IP14}
+  nr_ue15:
+    image: docker_ueransim
+    restart: on-failure
+    container_name: nr_ue15
+    stdin_open: true
+    tty: true
+    volumes:
+      - ./ueransim:/mnt/ueransim
+      - /etc/timezone:/etc/timezone:ro
+      - /etc/localtime:/etc/localtime:ro
+    env_file:
+      - .env
+    environment:
+      - COMPONENT_NAME=ueransim-ue-15
+    expose:
+      - "4997/udp"
+    cap_add:
+      - NET_ADMIN
+    privileged: true
+    networks:
+      default:
+        ipv4_address: ${NR_UE_IP15}
+  nr_ue16:
+    image: docker_ueransim
+    restart: on-failure
+    container_name: nr_ue16
+    stdin_open: true
+    tty: true
+    volumes:
+      - ./ueransim:/mnt/ueransim
+      - /etc/timezone:/etc/timezone:ro
+      - /etc/localtime:/etc/localtime:ro
+    env_file:
+      - .env
+    environment:
+      - COMPONENT_NAME=ueransim-ue-16
+    expose:
+      - "4997/udp"
+    cap_add:
+      - NET_ADMIN
+    privileged: true
+    networks:
+      default:
+        ipv4_address: ${NR_UE_IP16}
+  nr_ue17:
+    image: docker_ueransim
+    restart: on-failure
+    container_name: nr_ue17
+    stdin_open: true
+    tty: true
+    volumes:
+      - ./ueransim:/mnt/ueransim
+      - /etc/timezone:/etc/timezone:ro
+      - /etc/localtime:/etc/localtime:ro
+    env_file:
+      - .env
+    environment:
+      - COMPONENT_NAME=ueransim-ue-17
+    expose:
+      - "4997/udp"
+    cap_add:
+      - NET_ADMIN
+    privileged: true
+    networks:
+      default:
+        ipv4_address: ${NR_UE_IP17}
+  nr_ue18:
+    image: docker_ueransim
+    restart: on-failure
+    container_name: nr_ue18
+    stdin_open: true
+    tty: true
+    volumes:
+      - ./ueransim:/mnt/ueransim
+      - /etc/timezone:/etc/timezone:ro
+      - /etc/localtime:/etc/localtime:ro
+    env_file:
+      - .env
+    environment:
+      - COMPONENT_NAME=ueransim-ue-18
+    expose:
+      - "4997/udp"
+    cap_add:
+      - NET_ADMIN
+    privileged: true
+    networks:
+      default:
+        ipv4_address: ${NR_UE_IP18}
+  nr_ue19:
+    image: docker_ueransim
+    restart: on-failure
+    container_name: nr_ue19
+    stdin_open: true
+    tty: true
+    volumes:
+      - ./ueransim:/mnt/ueransim
+      - /etc/timezone:/etc/timezone:ro
+      - /etc/localtime:/etc/localtime:ro
+    env_file:
+      - .env
+    environment:
+      - COMPONENT_NAME=ueransim-ue-19
+    expose:
+      - "4997/udp"
+    cap_add:
+      - NET_ADMIN
+    privileged: true
+    networks:
+      default:
+        ipv4_address: ${NR_UE_IP19}
+  nr_ue20:
+    image: docker_ueransim
+    restart: on-failure
+    container_name: nr_ue20
+    stdin_open: true
+    tty: true
+    volumes:
+      - ./ueransim:/mnt/ueransim
+      - /etc/timezone:/etc/timezone:ro
+      - /etc/localtime:/etc/localtime:ro
+    env_file:
+      - .env
+    environment:
+      - COMPONENT_NAME=ueransim-ue-20
+    expose:
+      - "4997/udp"
+    cap_add:
+      - NET_ADMIN
+    privileged: true
+    networks:
+      default:
+        ipv4_address: ${NR_UE_IP20}
+  nr_ue21:
+    image: docker_ueransim
+    restart: on-failure
+    container_name: nr_ue21
+    stdin_open: true
+    tty: true
+    volumes:
+      - ./ueransim:/mnt/ueransim
+      - /etc/timezone:/etc/timezone:ro
+      - /etc/localtime:/etc/localtime:ro
+    env_file:
+      - .env
+    environment:
+      - COMPONENT_NAME=ueransim-ue-21
+    expose:
+      - "4997/udp"
+    cap_add:
+      - NET_ADMIN
+    privileged: true
+    networks:
+      default:
+        ipv4_address: ${NR_UE_IP21}
+  nr_ue22:
+    image: docker_ueransim
+    restart: on-failure
+    container_name: nr_ue22
+    stdin_open: true
+    tty: true
+    volumes:
+      - ./ueransim:/mnt/ueransim
+      - /etc/timezone:/etc/timezone:ro
+      - /etc/localtime:/etc/localtime:ro
+    env_file:
+      - .env
+    environment:
+      - COMPONENT_NAME=ueransim-ue-22
+    expose:
+      - "4997/udp"
+    cap_add:
+      - NET_ADMIN
+    privileged: true
+    networks:
+      default:
+        ipv4_address: ${NR_UE_IP22}
+  nr_ue23:
+    image: docker_ueransim
+    restart: on-failure
+    container_name: nr_ue23
+    stdin_open: true
+    tty: true
+    volumes:
+      - ./ueransim:/mnt/ueransim
+      - /etc/timezone:/etc/timezone:ro
+      - /etc/localtime:/etc/localtime:ro
+    env_file:
+      - .env
+    environment:
+      - COMPONENT_NAME=ueransim-ue-23
+    expose:
+      - "4997/udp"
+    cap_add:
+      - NET_ADMIN
+    privileged: true
+    networks:
+      default:
+        ipv4_address: ${NR_UE_IP23}
+  nr_ue24:
+    image: docker_ueransim
+    restart: on-failure
+    container_name: nr_ue24
+    stdin_open: true
+    tty: true
+    volumes:
+      - ./ueransim:/mnt/ueransim
+      - /etc/timezone:/etc/timezone:ro
+      - /etc/localtime:/etc/localtime:ro
+    env_file:
+      - .env
+    environment:
+      - COMPONENT_NAME=ueransim-ue-24
+    expose:
+      - "4997/udp"
+    cap_add:
+      - NET_ADMIN
+    privileged: true
+    networks:
+      default:
+        ipv4_address: ${NR_UE_IP24}
+  nr_ue25:
+    image: docker_ueransim
+    restart: on-failure
+    container_name: nr_ue25
+    stdin_open: true
+    tty: true
+    volumes:
+      - ./ueransim:/mnt/ueransim
+      - /etc/timezone:/etc/timezone:ro
+      - /etc/localtime:/etc/localtime:ro
+    env_file:
+      - .env
+    environment:
+      - COMPONENT_NAME=ueransim-ue-25
+    expose:
+      - "4997/udp"
+    cap_add:
+      - NET_ADMIN
+    privileged: true
+    networks:
+      default:
+        ipv4_address: ${NR_UE_IP25}
+  nr_ue26:
+    image: docker_ueransim
+    restart: on-failure
+    container_name: nr_ue26
+    stdin_open: true
+    tty: true
+    volumes:
+      - ./ueransim:/mnt/ueransim
+      - /etc/timezone:/etc/timezone:ro
+      - /etc/localtime:/etc/localtime:ro
+    env_file:
+      - .env
+    environment:
+      - COMPONENT_NAME=ueransim-ue-26
+    expose:
+      - "4997/udp"
+    cap_add:
+      - NET_ADMIN
+    privileged: true
+    networks:
+      default:
+        ipv4_address: ${NR_UE_IP26}
+  nr_ue27:
+    image: docker_ueransim
+    restart: on-failure
+    container_name: nr_ue27
+    stdin_open: true
+    tty: true
+    volumes:
+      - ./ueransim:/mnt/ueransim
+      - /etc/timezone:/etc/timezone:ro
+      - /etc/localtime:/etc/localtime:ro
+    env_file:
+      - .env
+    environment:
+      - COMPONENT_NAME=ueransim-ue-27
+    expose:
+      - "4997/udp"
+    cap_add:
+      - NET_ADMIN
+    privileged: true
+    networks:
+      default:
+        ipv4_address: ${NR_UE_IP27}
+  nr_ue28:
+    image: docker_ueransim
+    restart: on-failure
+    container_name: nr_ue28
+    stdin_open: true
+    tty: true
+    volumes:
+      - ./ueransim:/mnt/ueransim
+      - /etc/timezone:/etc/timezone:ro
+      - /etc/localtime:/etc/localtime:ro
+    env_file:
+      - .env
+    environment:
+      - COMPONENT_NAME=ueransim-ue-28
+    expose:
+      - "4997/udp"
+    cap_add:
+      - NET_ADMIN
+    privileged: true
+    networks:
+      default:
+        ipv4_address: ${NR_UE_IP28}
+  nr_ue29:
+    image: docker_ueransim
+    restart: on-failure
+    container_name: nr_ue29
+    stdin_open: true
+    tty: true
+    volumes:
+      - ./ueransim:/mnt/ueransim
+      - /etc/timezone:/etc/timezone:ro
+      - /etc/localtime:/etc/localtime:ro
+    env_file:
+      - .env
+    environment:
+      - COMPONENT_NAME=ueransim-ue-29
+    expose:
+      - "4997/udp"
+    cap_add:
+      - NET_ADMIN
+    privileged: true
+    networks:
+      default:
+        ipv4_address: ${NR_UE_IP29}
+  nr_ue30:
+    image: docker_ueransim
+    restart: on-failure
+    container_name: nr_ue30
+    stdin_open: true
+    tty: true
+    volumes:
+      - ./ueransim:/mnt/ueransim
+      - /etc/timezone:/etc/timezone:ro
+      - /etc/localtime:/etc/localtime:ro
+    env_file:
+      - .env
+    environment:
+      - COMPONENT_NAME=ueransim-ue-30
+    expose:
+      - "4997/udp"
+    cap_add:
+      - NET_ADMIN
+    privileged: true
+    networks:
+      default:
+        ipv4_address: ${NR_UE_IP30}
+  nr_ue31:
+    image: docker_ueransim
+    restart: on-failure
+    container_name: nr_ue31
+    stdin_open: true
+    tty: true
+    volumes:
+      - ./ueransim:/mnt/ueransim
+      - /etc/timezone:/etc/timezone:ro
+      - /etc/localtime:/etc/localtime:ro
+    env_file:
+      - .env
+    environment:
+      - COMPONENT_NAME=ueransim-ue-31
+    expose:
+      - "4997/udp"
+    cap_add:
+      - NET_ADMIN
+    privileged: true
+    networks:
+      default:
+        ipv4_address: ${NR_UE_IP31}
+  nr_ue32:
+    image: docker_ueransim
+    restart: on-failure
+    container_name: nr_ue32
+    stdin_open: true
+    tty: true
+    volumes:
+      - ./ueransim:/mnt/ueransim
+      - /etc/timezone:/etc/timezone:ro
+      - /etc/localtime:/etc/localtime:ro
+    env_file:
+      - .env
+    environment:
+      - COMPONENT_NAME=ueransim-ue-32
+    expose:
+      - "4997/udp"
+    cap_add:
+      - NET_ADMIN
+    privileged: true
+    networks:
+      default:
+        ipv4_address: ${NR_UE_IP32}
+  nr_ue33:
+    image: docker_ueransim
+    restart: on-failure
+    container_name: nr_ue33
+    stdin_open: true
+    tty: true
+    volumes:
+      - ./ueransim:/mnt/ueransim
+      - /etc/timezone:/etc/timezone:ro
+      - /etc/localtime:/etc/localtime:ro
+    env_file:
+      - .env
+    environment:
+      - COMPONENT_NAME=ueransim-ue-33
+    expose:
+      - "4997/udp"
+    cap_add:
+      - NET_ADMIN
+    privileged: true
+    networks:
+      default:
+        ipv4_address: ${NR_UE_IP33}
+  nr_ue34:
+    image: docker_ueransim
+    restart: on-failure
+    container_name: nr_ue34
+    stdin_open: true
+    tty: true
+    volumes:
+      - ./ueransim:/mnt/ueransim
+      - /etc/timezone:/etc/timezone:ro
+      - /etc/localtime:/etc/localtime:ro
+    env_file:
+      - .env
+    environment:
+      - COMPONENT_NAME=ueransim-ue-34
+    expose:
+      - "4997/udp"
+    cap_add:
+      - NET_ADMIN
+    privileged: true
+    networks:
+      default:
+        ipv4_address: ${NR_UE_IP34}
+  nr_ue35:
+    image: docker_ueransim
+    restart: on-failure
+    container_name: nr_ue35
+    stdin_open: true
+    tty: true
+    volumes:
+      - ./ueransim:/mnt/ueransim
+      - /etc/timezone:/etc/timezone:ro
+      - /etc/localtime:/etc/localtime:ro
+    env_file:
+      - .env
+    environment:
+      - COMPONENT_NAME=ueransim-ue-35
+    expose:
+      - "4997/udp"
+    cap_add:
+      - NET_ADMIN
+    privileged: true
+    networks:
+      default:
+        ipv4_address: ${NR_UE_IP35}
+  nr_ue36:
+    image: docker_ueransim
+    restart: on-failure
+    container_name: nr_ue36
+    stdin_open: true
+    tty: true
+    volumes:
+      - ./ueransim:/mnt/ueransim
+      - /etc/timezone:/etc/timezone:ro
+      - /etc/localtime:/etc/localtime:ro
+    env_file:
+      - .env
+    environment:
+      - COMPONENT_NAME=ueransim-ue-36
+    expose:
+      - "4997/udp"
+    cap_add:
+      - NET_ADMIN
+    privileged: true
+    networks:
+      default:
+        ipv4_address: ${NR_UE_IP36}
+  nr_ue37:
+    image: docker_ueransim
+    restart: on-failure
+    container_name: nr_ue37
+    stdin_open: true
+    tty: true
+    volumes:
+      - ./ueransim:/mnt/ueransim
+      - /etc/timezone:/etc/timezone:ro
+      - /etc/localtime:/etc/localtime:ro
+    env_file:
+      - .env
+    environment:
+      - COMPONENT_NAME=ueransim-ue-37
+    expose:
+      - "4997/udp"
+    cap_add:
+      - NET_ADMIN
+    privileged: true
+    networks:
+      default:
+        ipv4_address: ${NR_UE_IP37}
+  nr_ue38:
+    image: docker_ueransim
+    restart: on-failure
+    container_name: nr_ue38
+    stdin_open: true
+    tty: true
+    volumes:
+      - ./ueransim:/mnt/ueransim
+      - /etc/timezone:/etc/timezone:ro
+      - /etc/localtime:/etc/localtime:ro
+    env_file:
+      - .env
+    environment:
+      - COMPONENT_NAME=ueransim-ue-38
+    expose:
+      - "4997/udp"
+    cap_add:
+      - NET_ADMIN
+    privileged: true
+    networks:
+      default:
+        ipv4_address: ${NR_UE_IP38}
+  nr_ue39:
+    image: docker_ueransim
+    restart: on-failure
+    container_name: nr_ue39
+    stdin_open: true
+    tty: true
+    volumes:
+      - ./ueransim:/mnt/ueransim
+      - /etc/timezone:/etc/timezone:ro
+      - /etc/localtime:/etc/localtime:ro
+    env_file:
+      - .env
+    environment:
+      - COMPONENT_NAME=ueransim-ue-39
+    expose:
+      - "4997/udp"
+    cap_add:
+      - NET_ADMIN
+    privileged: true
+    networks:
+      default:
+        ipv4_address: ${NR_UE_IP39}
+  nr_ue40:
+    image: docker_ueransim
+    restart: on-failure
+    container_name: nr_ue40
+    stdin_open: true
+    tty: true
+    volumes:
+      - ./ueransim:/mnt/ueransim
+      - /etc/timezone:/etc/timezone:ro
+      - /etc/localtime:/etc/localtime:ro
+    env_file:
+      - .env
+    environment:
+      - COMPONENT_NAME=ueransim-ue-40
+    expose:
+      - "4997/udp"
+    cap_add:
+      - NET_ADMIN
+    privileged: true
+    networks:
+      default:
+        ipv4_address: ${NR_UE_IP40}
+  nr_ue41:
+    image: docker_ueransim
+    restart: on-failure
+    container_name: nr_ue41
+    stdin_open: true
+    tty: true
+    volumes:
+      - ./ueransim:/mnt/ueransim
+      - /etc/timezone:/etc/timezone:ro
+      - /etc/localtime:/etc/localtime:ro
+    env_file:
+      - .env
+    environment:
+      - COMPONENT_NAME=ueransim-ue-41
+    expose:
+      - "4997/udp"
+    cap_add:
+      - NET_ADMIN
+    privileged: true
+    networks:
+      default:
+        ipv4_address: ${NR_UE_IP41}
+  nr_ue42:
+    image: docker_ueransim
+    restart: on-failure
+    container_name: nr_ue42
+    stdin_open: true
+    tty: true
+    volumes:
+      - ./ueransim:/mnt/ueransim
+      - /etc/timezone:/etc/timezone:ro
+      - /etc/localtime:/etc/localtime:ro
+    env_file:
+      - .env
+    environment:
+      - COMPONENT_NAME=ueransim-ue-42
+    expose:
+      - "4997/udp"
+    cap_add:
+      - NET_ADMIN
+    privileged: true
+    networks:
+      default:
+        ipv4_address: ${NR_UE_IP42}
+  nr_ue43:
+    image: docker_ueransim
+    restart: on-failure
+    container_name: nr_ue43
+    stdin_open: true
+    tty: true
+    volumes:
+      - ./ueransim:/mnt/ueransim
+      - /etc/timezone:/etc/timezone:ro
+      - /etc/localtime:/etc/localtime:ro
+    env_file:
+      - .env
+    environment:
+      - COMPONENT_NAME=ueransim-ue-43
+    expose:
+      - "4997/udp"
+    cap_add:
+      - NET_ADMIN
+    privileged: true
+    networks:
+      default:
+        ipv4_address: ${NR_UE_IP43}
+  nr_ue44:
+    image: docker_ueransim
+    restart: on-failure
+    container_name: nr_ue44
+    stdin_open: true
+    tty: true
+    volumes:
+      - ./ueransim:/mnt/ueransim
+      - /etc/timezone:/etc/timezone:ro
+      - /etc/localtime:/etc/localtime:ro
+    env_file:
+      - .env
+    environment:
+      - COMPONENT_NAME=ueransim-ue-44
+    expose:
+      - "4997/udp"
+    cap_add:
+      - NET_ADMIN
+    privileged: true
+    networks:
+      default:
+        ipv4_address: ${NR_UE_IP44}
+  nr_ue45:
+    image: docker_ueransim
+    restart: on-failure
+    container_name: nr_ue45
+    stdin_open: true
+    tty: true
+    volumes:
+      - ./ueransim:/mnt/ueransim
+      - /etc/timezone:/etc/timezone:ro
+      - /etc/localtime:/etc/localtime:ro
+    env_file:
+      - .env
+    environment:
+      - COMPONENT_NAME=ueransim-ue-45
+    expose:
+      - "4997/udp"
+    cap_add:
+      - NET_ADMIN
+    privileged: true
+    networks:
+      default:
+        ipv4_address: ${NR_UE_IP45}
+  nr_ue46:
+    image: docker_ueransim
+    restart: on-failure
+    container_name: nr_ue46
+    stdin_open: true
+    tty: true
+    volumes:
+      - ./ueransim:/mnt/ueransim
+      - /etc/timezone:/etc/timezone:ro
+      - /etc/localtime:/etc/localtime:ro
+    env_file:
+      - .env
+    environment:
+      - COMPONENT_NAME=ueransim-ue-46
+    expose:
+      - "4997/udp"
+    cap_add:
+      - NET_ADMIN
+    privileged: true
+    networks:
+      default:
+        ipv4_address: ${NR_UE_IP46}
+  nr_ue47:
+    image: docker_ueransim
+    restart: on-failure
+    container_name: nr_ue47
+    stdin_open: true
+    tty: true
+    volumes:
+      - ./ueransim:/mnt/ueransim
+      - /etc/timezone:/etc/timezone:ro
+      - /etc/localtime:/etc/localtime:ro
+    env_file:
+      - .env
+    environment:
+      - COMPONENT_NAME=ueransim-ue-47
+    expose:
+      - "4997/udp"
+    cap_add:
+      - NET_ADMIN
+    privileged: true
+    networks:
+      default:
+        ipv4_address: ${NR_UE_IP47}
+  nr_ue48:
+    image: docker_ueransim
+    restart: on-failure
+    container_name: nr_ue48
+    stdin_open: true
+    tty: true
+    volumes:
+      - ./ueransim:/mnt/ueransim
+      - /etc/timezone:/etc/timezone:ro
+      - /etc/localtime:/etc/localtime:ro
+    env_file:
+      - .env
+    environment:
+      - COMPONENT_NAME=ueransim-ue-48
+    expose:
+      - "4997/udp"
+    cap_add:
+      - NET_ADMIN
+    privileged: true
+    networks:
+      default:
+        ipv4_address: ${NR_UE_IP48}
+  nr_ue49:
+    image: docker_ueransim
+    restart: on-failure
+    container_name: nr_ue49
+    stdin_open: true
+    tty: true
+    volumes:
+      - ./ueransim:/mnt/ueransim
+      - /etc/timezone:/etc/timezone:ro
+      - /etc/localtime:/etc/localtime:ro
+    env_file:
+      - .env
+    environment:
+      - COMPONENT_NAME=ueransim-ue-49
+    expose:
+      - "4997/udp"
+    cap_add:
+      - NET_ADMIN
+    privileged: true
+    networks:
+      default:
+        ipv4_address: ${NR_UE_IP49}
+  nr_ue50:
+    image: docker_ueransim
+    restart: on-failure
+    container_name: nr_ue50
+    stdin_open: true
+    tty: true
+    volumes:
+      - ./ueransim:/mnt/ueransim
+      - /etc/timezone:/etc/timezone:ro
+      - /etc/localtime:/etc/localtime:ro
+    env_file:
+      - .env
+    environment:
+      - COMPONENT_NAME=ueransim-ue-50
+    expose:
+      - "4997/udp"
+    cap_add:
+      - NET_ADMIN
+    privileged: true
+    networks:
+      default:
+        ipv4_address: ${NR_UE_IP50}
+networks:
+  default:
+    external:
+      name: docker_open5gs_default
